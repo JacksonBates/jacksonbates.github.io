@@ -100,9 +100,12 @@ article {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
+
 .portfolio-links {
   display: flex;
   justify-content: right;
