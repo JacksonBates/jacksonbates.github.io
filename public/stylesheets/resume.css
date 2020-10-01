@@ -86,11 +86,12 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 1rem;
   border-radius: 5px;
   border: none;
   box-shadow: 1px 1px 1px #e83e8c;
+  max-width: 80vw;
 }
 
 .gallery {
