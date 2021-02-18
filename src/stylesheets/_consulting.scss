@@ -60,3 +60,14 @@
     text-shadow: 2px 2px 2px $dark;
   }
 }
+
+ul.fancy-list {
+  list-style-type: none;
+
+  li::before {
+    content: "\f058";
+    color: $primary;
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
+  }
+}
