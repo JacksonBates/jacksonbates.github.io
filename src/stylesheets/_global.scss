@@ -7,7 +7,7 @@ html {
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  color: $gray-700;
   overflow-x: hidden;
 }
 @media (min-width: 992px) {

@@ -14,3 +14,17 @@ a {
     color: darken($primary, 15%);
   }
 }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $yellow;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $yellow;
+    color: darken($primary, 15%);
+  }
+}
+
+#sideNav .navbar-brand .img-profile {
+  border: 0.5rem solid $yellow;
+}

@@ -4,6 +4,10 @@
   max-width: 960px;
 }
 
+.problem-statements.lead {
+  color: #53595f;
+}
+
 .banner {
   background-color: $primary;
   padding: 2em;
@@ -17,7 +21,7 @@
   margin-bottom: 2em;
   h1,
   h2 {
-    color: gold;
+    color: $yellow;
     text-shadow: 2px 2px 2px $dark;
   }
 }
@@ -46,7 +50,7 @@
   flex: 0 1 300px;
   background-color: $primary;
   font-size: 1.1em;
-  color: gold;
+  color: $yellow;
   margin: 1em;
   padding: 1em;
   width: 50%;
@@ -56,7 +60,7 @@
   }
   h3 {
     font-size: 3em;
-    color: gold;
+    color: $yellow;
     text-shadow: 2px 2px 2px $dark;
   }
 }
