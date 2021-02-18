@@ -26,8 +26,21 @@
   }
 }
 
+@media (max-width: 992px) {
+  .banner {
+    h1,
+    h2 {
+      font-size: 4rem;
+      color: $yellow;
+      text-shadow: 2px 2px 2px $dark;
+    }
+  }
+}
+
 .problem-statements {
-  line-height: 1em;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  max-width: 40em;
 }
 
 .center-heading {
@@ -66,7 +79,12 @@
 }
 
 ul.fancy-list {
+  max-width: 45em;
+  margin: 0 auto;
   list-style-type: none;
+  li {
+    padding-bottom: 0.5rem;
+  }
 
   li::before {
     content: "\f058";
