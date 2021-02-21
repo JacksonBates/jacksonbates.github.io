@@ -93,3 +93,83 @@ ul.fancy-list {
     padding: 0 10px 0 0;
   }
 }
+
+ul.linktree {
+  text-align: center;
+  font-size: 2rem;
+  max-width: 45em;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 1rem;
+
+  li {
+    margin: 1rem;
+    box-shadow: inset 1px 1px 0 1px $primary, 1px 1px 0 1px $primary;
+
+    a {
+      text-decoration: none;
+      display: block;
+      line-height: 4rem;
+    }
+
+    a:focus,
+    a:hover {
+      background-color: $primary;
+      color: $yellow;
+    }
+  }
+}
+
+.link-banner {
+  background-color: $primary;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 1em;
+  margin-bottom: 1em;
+  h1,
+  h2 {
+    margin: 0;
+    line-height: 1em;
+    color: $yellow;
+    text-shadow: 2px 2px 2px $dark;
+  }
+}
+
+@media (max-width: 992px) {
+  ul.linktree {
+    font-size: 1rem;
+    max-width: auto;
+    padding: 0;
+
+    li {
+      margin: 1rem;
+
+      a {
+        line-height: 3rem;
+      }
+    }
+  }
+
+  .link-banner {
+    background-color: $primary;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0.51em;
+    margin-bottom: 0.5em;
+    h1,
+    h2 {
+      margin: 0;
+      line-height: 1em;
+      color: $yellow;
+      text-shadow: 2px 2px 2px $dark;
+    }
+  }
+}

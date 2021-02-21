@@ -10,8 +10,13 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://jacksonbates.com/consulting.html</loc>
+  <loc>https://jacksonbates.com/consulting</loc>
   <lastmod>2021-02-13T09:18:22+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacksonbates.com/links</loc>
+  <lastmod>2021-02-22T06:29:22+00:00</lastmod>
+  <priority>0.70</priority>
 </url>
 </urlset>
