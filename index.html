@@ -16,58 +16,6 @@
 
     gtag('config', 'UA-178925242-2');
   </script>
-  <script>
-    function nativeTreeWalker() {
-      var walker = document.createTreeWalker(
-        document.body,
-        NodeFilter.SHOW_TEXT,
-        null,
-        false
-      );
-
-      var node;
-      var textNodes = [];
-
-      while (node = walker.nextNode()) {
-        textNodes.push(node.nodeValue);
-      }
-      var filtered = textNodes.filter(node => node.match(/\w/g));
-
-      // for (var i = 0; i < filtered.length; i++) {
-      //   filtered[i].replace(filtered[i], 'poop')
-      // }
-      return filtered
-    }
-
-    function nativeSelector() {
-      var elements = document.querySelectorAll("body, body *"); /* Fixed a bug here. Thanks @theazureshadow */
-      var results = [];
-      var child;
-      for (var i = 0; i < elements.length; i++) {
-        child = elements[i].childNodes[0];
-        if (elements[i].hasChildNodes() && child.nodeType == 3) {
-          results.push(child.parentElement)
-        }
-      }
-      return results;
-    }
-
-    async function sendToApi() {
-      var html = document.querySelector('body');
-      let response = await fetch('http://localhost:8000/api/translate/', {
-        method: 'POST',
-        // mode: 'no-cors', // no-cors, *cors, same-origin
-        headers: {
-          'Content-Type': 'text/plain',
-        },
-        body: JSON.stringify({ hello: "hello" }),
-      });
-      let data = await response.json();
-      console.log({ data })
-
-    }
-    // sendToApi();
-  </script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="preload" href="fontawesome-free/css/all.min.css" as="style"
@@ -132,12 +80,8 @@
         <p class="lead mb-5">
           I am currently the lead software engineer at
           <span><a href="https://gracepapers.com.au">Grace Papers</a></span>, a social change business dedicated to
-          empowering working parents
-          and fighting for gender equality at home and in the workplace.
+          empowering working parents and fighting for gender equality at home and in the workplace.
         </p>
-        <p class="lead mb-5">
-          I am also available for short-term <span><a href="./consulting">consulting and development</a></span>,
-          but I'm pretty busy so new contracts are considered on a first-come, first-served basis.</p>
         <div class="social-icons">
           <a href="https://linkedin.com/in/jackson-bates">
             <i class="fab fa-linkedin-in"></i>
@@ -217,7 +161,7 @@
           </li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Former teacher: expert communicator
+            Former teacher: expert communicator and mentor
           </li>
           <li>
             <i class="fa-li fa fa-check"></i>
