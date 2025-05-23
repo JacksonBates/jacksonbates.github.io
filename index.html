@@ -1,385 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Jackson Bates is a Melbourne based Software Engineer, and currently the Chief Technical Officer at Grace Papers."
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fontawesome-free/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap"
+    />
+    <noscript>
+      <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+    </noscript>
+    <link href="./public/stylesheets/resume.css" rel="stylesheet" />
+    <title>Jackson Bates | Software Engineer Melbourne</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name='description'
-    content='Jackson Bates is a Melbourne based Software Engineer, and currently the Chief Technical Officer at Grace Papers.' />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="preload" href="fontawesome-free/css/all.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap">
-  <noscript>
-    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
-  </noscript>
-  <link href="./public/stylesheets/resume.css" rel="stylesheet" />
-  <title>Jackson Bates | Software Engineer Melbourne</title>
-</head>
+  <body id="page-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Jackson Bates</span>
+        <span class="d-none d-lg-block">
+          <img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="public/images/minimized_headshot.jpg"
+            alt="Jackson Bates"
+          />
+        </span>
+      </a>
+      <button
+        id="menu-toggle"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.jacksonbates.com">Writing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://youtube.com/jacksonbates"
+              >YouTube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid p-0">
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="about"
+      >
+        <div class="w-100">
+          <h1 class="mb-0">
+            Jackson
+            <span class="text-primary">Bates</span>
+          </h1>
+          <div class="subheading mb-5">
+            Melbourne, Australia
+            <a href="mailto:contact@jacksonbates.com"
+              >contact@jacksonbates.com</a
+            >
+          </div>
+          <p class="lead mb-5">
+            I am currently a senior software engineer at
+            <span><a href="https://getatomi.com">Atomi</a></span
+            >, a Edutech platform for high school students and teachers.
+          </p>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/jackson-bates">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/JacksonBates">
+              <i class="fab fa-github"></i>
+            </a>
+            <a rel="me" href="https://aus.social/web/@JacksonBates">
+              <i class="fab fa-mastodon"></i>
+            </a>
+            <a href="https://youtube.com/JacksonBates">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Jackson Bates</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="public/images/minimized_headshot.jpg"
-          alt="Jackson Bates" />
-      </span>
-    </a>
-    <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
-      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://blog.jacksonbates.com">Writing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://youtube.com/jacksonbates">YouTube</a>
-        </li>
-      </ul>
+      <hr class="m-0" />
+
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="skills"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Skills</h2>
+
+          <p class="lead mb-5">
+            I've worked professionally with a range of languages and technology
+            stacks, but my heart is always in TypeScript. My current
+            professional work is with React, TypeScript, GraphQL, NodeJS and
+            PrismaJS, but I've also had occasion to work with Ruby on Rails,
+            Python, and Clojurescript. I also have an unhealthy obsession with
+            writing quick and dirty scripts in Bash whenever the thinnest
+            pretext presents itself.
+          </p>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item">
+              <i class="fab fa-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-node-js"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-react"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-php"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-laravel"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-linux"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-atlassian"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-aws"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-git"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Dispositions</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Tinkerer: dedicated problem solver
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Former consultant: fast learner
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Former teacher: expert communicator and mentor
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Independent team member: I don't need my hand held, but I play
+              well with others
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+
+      <section
+        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="experience"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Experience</h2>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Engineering Manager</h3>
+              <div class="subheading mb-3">Atomi</div>
+              <p>Engineer Manager for a growing Australian Edutech company.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2022 - Present</span>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Chief Technical Officer</h3>
+              <div class="subheading mb-3">Grace Papers</div>
+              <p>
+                CTO for a company dedicated to social change working with
+                household names nationally.
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">October 2021 - August 2022</span>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Lead Software Engineer</h3>
+              <div class="subheading mb-3">Grace Papers</div>
+              <p>
+                Engineering Lead for a company dedicated to social change
+                working with household names nationally.
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">December 2019 - October 2021</span>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Software Engineer | Consultant</h3>
+              <div class="subheading mb-3">Silverpond</div>
+              <p>
+                Building web applications that support Machine Learning work in
+                industries with large scale asset inspection requirements,
+                wildlife conservation, and retail.
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2018 - December 2019</span>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Moderator, Writer, Odd-Jobs Man</h3>
+              <div class="subheading mb-3">freeCodeCamp</div>
+              <p>
+                Supporting learner developers in their goals to learn coding and
+                become employable.
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2016 - Present</span>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0" style="margin-top: 3rem">
+                English Teacher, IT Teacher, Department Head,
+              </h3>
+              <div class="subheading mb-3">
+                Various Schools, UK &amp; Australia
+              </div>
+              <p>
+                Once upon a time, I was a Senior Teacher, Head of English, and
+                Coordinator of Learning Technologies. There were useful
+                parallels between my first career and my current one - you can
+                ask me about them sometime!
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Ancient History (2005-2017)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+
+      <section
+        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="portfolio"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Samples</h2>
+
+          <p>
+            My professional work all lives in private repos and is bound by
+            NDAs. Fear not, you can see my second rate hack-jobs here at least!
+            Here are some side projects and itch-scratchers that are at least
+            <em>vaguely</em> presentable, but also some articles and podcasts
+            that I have written or been involved in.
+          </p>
+          <section class="gallery">
+            <div class="sample-card">
+              <h3>
+                From high school English teacher to Software Engineer at a
+                Machine Learning company (Podcast)
+              </h3>
+              <p>
+                A podcast interview, in which I shared my story about becoming a
+                Software Engineer, being involved in open source, and mentoring
+                others in the coding journeys.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  class="portfolio-link"
+                  href="http://podcast.freecodecamp.org/ep-83-from-high-school-english-teacher-to-software-engineer-at-a-machine-learning-company"
+                  >Podcast link</a
+                >
+              </div>
+            </div>
+
+            <div class="sample-card">
+              <h3>How to Attract and Retain Talent (Podcast)</h3>
+              <p>
+                A podcast panel, in which I discussed hiring and retention. I
+                specifically focused on the challenges inherent in doing so at a
+                very small company.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  class="portfolio-link"
+                  href="https://open.spotify.com/episode/0wVPwcHGavraYamHPBfu0N"
+                  >Podcast link</a
+                >
+              </div>
+            </div>
+
+            <div class="sample-card">
+              <h3>What running taught me about persistence and programming</h3>
+              <p>
+                A blog post I wrote about the parallels between running and
+                programming. It was a silly idea that came to paradoxical
+                conclusions, but I actually still stand by it!
+              </p>
+              <div class="portfolio-links">
+                <a
+                  class="portfolio-link"
+                  href="https://blog.jacksonbates.com/blog/2020-11-20-running/"
+                  >Blog</a
+                >
+              </div>
+            </div>
+
+            <div class="sample-card">
+              <h3>Feedback as macronutrients</h3>
+              <p>
+                A tortured metaphor about a particular way to think about the
+                various types of feedback we might give or receive. Also silly,
+                and probably less defensible than the running one. But I still
+                think I have a point. Or I might just have been hungry.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  class="portfolio-link"
+                  href="https://blog.jacksonbates.com/blog/feedback-as-macronutrients/"
+                  >Blog</a
+                >
+              </div>
+            </div>
+
+            <div class="sample-card">
+              <h3>Tweet Delete Bot</h3>
+              <p>
+                A Twitter bot written in Node.js that deletes tweets and unlikes
+                favourites more than 10 days old. I used it for a couple of
+                years. Of course, no one is on Twitter anymore, myself included,
+                so it doesn't matter.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/jacksonbates/tweet-delete-bot"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
-  </nav>
-  <div class="container-fluid p-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">
-          Jackson
-          <span class="text-primary">Bates</span>
-        </h1>
-        <div class="subheading mb-5">
-          Melbourne, Australia
-          <a href="mailto:contact@jacksonbates.com">contact@jacksonbates.com</a>
-        </div>
-        <p class="lead mb-5">
-          I am currently a senior software engineer at
-          <span><a href="https://getatomi.com">Atomi</a></span>, a Edutech platform for high school students
-          and
-          teachers.
-        </p>
-        <div class="social-icons">
-          <a href="https://linkedin.com/in/jackson-bates">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/JacksonBates">
-            <i class="fab fa-github"></i>
-          </a>
-          <a rel="me" href="https://aus.social/web/@JacksonBates">
-            <i class="fab fa-mastodon"></i>
-          </a>
-          <a href="https://youtube.com/JacksonBates">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0" />
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <p class="lead mb-5">
-          I've worked professionally with a range of languages and technology
-          stacks, but my heart is always in JavaScript. My current
-          professional work is with React, TypeScript, GraphQL, NodeJS and PrismaJS, but I've also had
-          occasion to work with Ruby on Rails, Python, and Clojurescript.
-        </p>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-php"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-laravel"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-linux"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-atlassian"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-aws"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-git"></i>
-          </li>
-        </ul>
-
-        <div class="subheading mb-3">Dispositions</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Tinkerer: dedicated problem solver
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Former consultant: fast learner
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Former teacher: expert communicator and mentor
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Independent team member: I don't need my hand held, but I play
-            well with others
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0" />
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Software Engineer</h3>
-            <div class="subheading mb-3">Atomi</div>
-            <p>
-              Senior Software Engineer for an Australian Edutech company.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2022 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Chief Technical Officer</h3>
-            <div class="subheading mb-3">Grace Papers</div>
-            <p>
-              CTO for a company dedicated to social
-              change working with household names nationally.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2021 - August 2022</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Lead Software Engineer</h3>
-            <div class="subheading mb-3">Grace Papers</div>
-            <p>
-              Engineering Lead for a company dedicated to social
-              change working with household names nationally.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2019 - October 2021</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Software Engineer | Consultant</h3>
-            <div class="subheading mb-3">Silverpond</div>
-            <p>
-              Building web applications that support Machine Learning work in
-              industries with large scale asset inspection requirements,
-              wildlife conservation, and retail.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2018 - December 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Moderator, Writer, Odd-Jobs Man</h3>
-            <div class="subheading mb-3">freeCodeCamp</div>
-            <p>
-              Supporting learner developers in their goals to learn coding and
-              become employable.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2016 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0" style="margin-top: 3rem;">
-              English Teacher, IT Teacher, Department Head,
-            </h3>
-            <div class="subheading mb-3">
-              Various Schools, UK &amp; Australia
-            </div>
-            <p>
-              Once upon a time, I was a Senior Teacher, Head of English, and
-              Coordinator of Learning Technologies. There were useful
-              parallels between my first career and my current one - you can
-              ask me about them sometime!
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Ancient History (2005-2017)</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0" />
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="portfolio">
-      <div class="w-100">
-        <h2 class="mb-5">Samples</h2>
-
-        <p>
-          My professional work all lives in private repos and is bound by
-          NDAs. Fear not, you can see my second rate hack-jobs here at least!
-          Here are some side projects and itch-scratchers that are at least
-          <em>vaguely</em> presentable:
-        </p>
-        <section class="gallery">
-          <div class="sample-card">
-            <h3>GitHub GraphQL API example app</h3>
-            <p>
-              A simple frontend app using React with hooks and Apollo to call
-              the GitHub v4 GrpahQL API. It returns a list of followers for a
-              user. It requires an API key to use.
-            </p>
-            <div class="portfolio-links">
-              <a class='portfolio-link' href="https://github.com/jacksonbates/github-graphql">Code</a>
-              <a class="portfolio-link" href="https://suspicious-liskov-6ab299.netlify.com/">Demo</a>
-            </div>
-          </div>
-          <div class="sample-card">
-            <h3>Diceware Passphrase Generator</h3>
-            <p>
-              A simple generator for diceware passphrases. Based on the EFF
-              wordlist and crytographically random emulated dice rolls. It's
-              actually pretty neat under the hood, but on the surface it just
-              gives you a list of 5-8 random words.
-            </p>
-            <div class="portfolio-links">
-              <a class='portfolio-link' href="https://github.com/jacksonbates/diceware">Code</a>
-              <a class="portfolio-link" href="https://jacksonbates.github.io/diceware">Demo</a>
-            </div>
-          </div>
-          <div class="sample-card">
-            <h3>Tweet Delete Bot</h3>
-            <p>
-              A Twitter bot written in Node.js that deletes tweets and unlikes
-              favourites more than 10 days old. I used it for a couple of years,
-              but have since disabled it having realised the crime I was
-              committing robbing the world of my pithy wisdom.
-            </p>
-            <div class="portfolio-links">
-              <a class='portfolio-link' href="https://github.com/jacksonbates/tweet-delete-bot">Code</a>
-            </div>
-          </div>
-          <div class="sample-card">
-            <h3>How to implement your first password-less login system</h3>
-            <p>
-              A written tutorial on implementing passwordless authentication in
-              a full stack JavaScript app.
-            </p>
-            <div class="portfolio-links">
-              <a class="portfolio-link"
-                href="https://www.freecodecamp.org/news/how-to-implement-your-first-password-less-login-system-8141b6f9ddf2/">Article
-                link</a>
-            </div>
-          </div>
-          <div class="sample-card">
-            <h3>
-              What I learned from writing six functions that all did the same
-              thing
-            </h3>
-            <p>
-              An article extolling the virtues of benchmarking, unit-testing and
-              refactoring.
-            </p>
-            <div class="portfolio-links">
-              <a class="portfolio-link"
-                href="https://www.freecodecamp.org/news/what-i-learned-from-writing-six-functions-that-all-did-the-same-thing-b38fd48f0d55/">Article
-                link</a>
-            </div>
-          </div>
-          <div class="sample-card">
-            <h3>
-              5 Awesome Terminal Tricks to Help you Level Up as a Developer
-            </h3>
-            <p>
-              A listicle, the primary purpose of which was to tell people how
-              much I freaking love
-              <a href="https://jonas.github.io/tig/">tig</a>.
-            </p>
-            <div class="portfolio-links">
-              <a class="portfolio-link" href="https://www.freecodecamp.org/news/terminal-tricks/">
-                Article link</a>
-            </div>
-          </div>
-          <div class="sample-card">
-            <h3>
-              From high school English teacher to Software Engineer at a Machine
-              Learning company (Podcast)
-            </h3>
-            <p>
-              A podcast interview, in which I shared my story about becoming a
-              Software Engineer, being involved in open source, and mentoring
-              others in the coding journeys.
-            </p>
-            <div class="portfolio-links">
-              <a class="portfolio-link"
-                href="http://podcast.freecodecamp.org/ep-83-from-high-school-english-teacher-to-software-engineer-at-a-machine-learning-company">Podcast
-                link</a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-  </div>
-  <!-- Bootstrap core JS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-  <!-- Third party plugin JS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-  <!-- Core theme JS-->
-  <!-- <script src="js/scripts.js"></script> -->
-</body>
-
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <!-- <script src="js/scripts.js"></script> -->
+  </body>
 </html>
