@@ -7,11 +7,13 @@
 }
 
 a {
-  color: $primary;
+  color: $primary !important;
+  text-decoration: none !important; // No underline by default
   &:hover,
   &:focus,
   &:active {
-    color: darken($primary, 15%);
+    color: $primary !important; // Keep the same color on hover
+    text-decoration: underline !important; // Show underline only on hover
   }
 }
 

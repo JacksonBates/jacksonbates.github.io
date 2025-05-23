@@ -9,12 +9,6 @@
       content="Jackson Bates is a Melbourne based Software Engineer, and currently an Engineering Manager at Atomi."
     />
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
       rel="preload"
       href="fontawesome-free/css/all.min.css"
       as="style"
@@ -36,65 +30,53 @@
   </head>
 
   <body id="page-top">
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      id="sideNav"
-    >
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Jackson Bates</span>
+    <nav class="site-nav">
+      <div class="nav-header">
+        <a class="nav-brand" href="#page-top">
+          <span class="d-block d-lg-none">Jackson Bates</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="d-lg-block">
         <span class="d-none d-lg-block">
           <img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            class="img-fluid rounded-circle mx-auto mb-2"
             src="public/images/minimized_headshot.jpg"
             alt="Jackson Bates"
           />
         </span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience"
-              >Experience</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://blog.jacksonbates.com">Writing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://youtube.com/jacksonbates"
-              >YouTube</a
-            >
-          </li>
-        </ul>
       </div>
+      <ul class="nav-list" id="navbarMenu">
+        <li class="nav-item">
+          <a class="nav-link" href="#page-top">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://blog.jacksonbates.com">Writing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://youtube.com/jacksonbates"
+            >YouTube</a
+          >
+        </li>
+      </ul>
     </nav>
-    <div class="container-fluid p-0">
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="about"
-      >
+    <div class="container p-0">
+      <section class="section d-flex align-items-center" id="about">
         <div class="w-100">
           <h1 class="mb-0">
             Jackson
@@ -130,10 +112,7 @@
 
       <hr class="m-0" />
 
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="skills"
-      >
+      <section class="section d-flex align-items-center" id="skills">
         <div class="w-100">
           <h2 class="mb-5">Skills</h2>
 
@@ -209,10 +188,7 @@
 
       <hr class="m-0" />
 
-      <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="experience"
-      >
+      <section class="section d-flex justify-content-center" id="experience">
         <div class="w-100">
           <h2 class="mb-5">Experience</h2>
 
@@ -320,10 +296,7 @@
 
       <hr class="m-0" />
 
-      <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="portfolio"
-      >
+      <section class="section d-flex justify-content-center" id="portfolio">
         <div class="w-100">
           <h2 class="mb-5">Samples</h2>
 
@@ -423,11 +396,6 @@
         </div>
       </section>
     </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Custom JS -->
     <script src="main.js"></script>
   </body>

@@ -1,3 +1,4 @@
+// filepath: /Users/jacksonbates/own/jacksonbates.github.io/src/stylesheets/_resume-item.scss
 .portfolio-link {
   border: 1px solid $primary;
   padding: 0.5em;
@@ -12,31 +13,47 @@
   }
 }
 
-section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+.portfolio-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sample-card {
+  margin-bottom: 2rem;
+}
+
+section.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   max-width: 75rem;
+  
   .resume-item {
-    .resume-content {
-    }
-    .resume-date {
-      min-width: none;
-    }
+    margin-bottom: 3rem;
+  }
+  
+  .resume-date {
+    min-width: none;
   }
 }
-@media (min-width: 768px) {
-  section.resume-section {
+
+@media (min-width: $breakpoint-md) {
+  section.section {
     min-height: 100vh;
+    
     .resume-item {
+      display: flex;
+      flex-direction: row;
+      
       .resume-date {
         min-width: 18rem;
       }
     }
   }
 }
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+
+@media (min-width: $breakpoint-lg) {
+  section.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }

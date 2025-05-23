@@ -1,34 +1,45 @@
-// Variables
+// Custom Variables - Removed Bootstrap dependencies
 
-// Restate Bootstrap Variables
+// Colors
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
 
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$newpink: #8e126f;
+$red: #dc3545;
+$orange: #bd5d38;
+$yellow: #fff760;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
 
-$blue: #007bff !default;
-$indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
-$pink: #e83e8c !default;
-$newpink: #8e126f !default;
-$red: #dc3545 !default;
-$orange: #bd5d38 !default;
-$yellow: #fff760 !default;
-$green: #28a745 !default;
-$teal: #20c997 !default;
-$cyan: #17a2b8 !default;
+// Theme colors
+$primary: $newpink;
+$secondary: $gray-600;
+$success: $green;
 
-$primary: $newpink !default;
-$secondary: $gray-600 !default;
-$success: $green !default;
+// Layout variables
+$sidebar-width: 17rem;
+$section-padding: 5rem;
+$section-padding-sm: 3rem;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
