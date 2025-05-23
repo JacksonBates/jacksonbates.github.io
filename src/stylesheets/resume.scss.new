@@ -1,0 +1,18 @@
+// Main SCSS file using modern @use syntax
+
+// Use the core modules
+@use "index" as *;
+
+// Add color module for modern color functions
+@use "sass:color";
+
+// Base styles
+@use "reset";
+@use "global";
+
+// Component styles
+@use "nav";
+@use "resume-item";
+@use "consulting";
+@use "links";
+@use "utilities";

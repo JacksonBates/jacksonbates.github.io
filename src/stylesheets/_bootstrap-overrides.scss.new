@@ -1,5 +1,5 @@
-// Use the color module for modern color functions
-@use "sass:color" as *;
+// filepath: /Users/jacksonbates/own/jacksonbates.github.io/src/stylesheets/_bootstrap-overrides.scss
+@use "sass:color";
 
 .bg-primary {
   background-color: $primary !important;
