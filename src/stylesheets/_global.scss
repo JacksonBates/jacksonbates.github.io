@@ -1,4 +1,6 @@
 @use "sass:color";
+@use "variables";
+@use "mixins";
 
 // Global styling for this template
 
@@ -8,18 +10,18 @@ html {
 }
 
 body {
-  @include body-font;
+  @include mixins.body-font;
   padding-top: 54px;
-  color: $gray-700;
+  color: variables.$gray-700;
   overflow-x: hidden;
   line-height: 1.5;
   font-weight: 400;
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: variables.$breakpoint-lg) {
   body {
     padding-top: 0;
-    padding-left: $sidebar-width;
+    padding-left: variables.$sidebar-width;
   }
 }
 
@@ -35,10 +37,10 @@ body {
 
 // Section styling
 .section {
-  padding: $section-padding-sm;
+  padding: variables.$section-padding-sm;
   
-  @media (min-width: $breakpoint-lg) {
-    padding: $section-padding;
+  @media (min-width: variables.$breakpoint-lg) {
+    padding: variables.$section-padding;
   }
 }
 
@@ -48,10 +50,10 @@ h3,
 h4,
 h5,
 h6 {
-  @include heading-font;
+  @include mixins.heading-font;
   font-weight: 700;
   text-transform: uppercase;
-  color: $gray-800;
+  color: variables.$gray-800;
 }
 
 h1,
@@ -78,7 +80,7 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  @include heading-font;
+  @include mixins.heading-font;
   font-size: 1.5rem;
 }
 
@@ -87,8 +89,8 @@ p.lead {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: $gray-700;
-    color: $white !important;
+    background-color: variables.$gray-700;
+    color: variables.$white !important;
     border-radius: 100%;
     text-align: center;
     font-size: 1.5rem;
@@ -98,12 +100,12 @@ p.lead {
       margin-right: 0;
     }
     &:hover {
-      background-color: $primary;
+      background-color: variables.$primary;
     }
   }
 }
 
-.dev-icons {
+dev-icons {
   font-size: 3rem;
   display: flex;
   flex-wrap: wrap;
@@ -115,7 +117,7 @@ p.lead {
     
     i {
       &:hover {
-        color: $primary;
+        color: variables.$primary;
       }
     }
   }
@@ -141,13 +143,13 @@ article {
   
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba($primary, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(variables.$primary, 0.2);
   }
   
   h3 {
     margin-top: 0;
     font-size: 1.2rem;
-    color: $primary;
+    color: variables.$primary;
   }
 }
 
@@ -172,13 +174,13 @@ article {
   margin-top: auto;
   padding-top: 1rem;     a.portfolio-link {
        padding: 0.5rem 1rem;
-       background-color: $primary;
+       background-color: variables.$primary;
        color: white !important;
        border-radius: 4px;
        transition: background-color 0.2s ease;
        
        &:hover {
-         background-color: color.adjust($primary, $lightness: -10%);
+         background-color: color.adjust(variables.$primary, $lightness: -10%);
          text-decoration: none !important;
        }
      }

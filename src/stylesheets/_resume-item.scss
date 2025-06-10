@@ -1,14 +1,15 @@
-// filepath: /Users/jacksonbates/own/jacksonbates.github.io/src/stylesheets/_resume-item.scss
+@use "variables";
+
 .portfolio-link {
-  border: 1px solid $primary;
+  border: 1px solid variables.$primary;
   padding: 0.5em;
   margin: 16px;
   border-radius: 5px;
   text-decoration: none;
 
   &:hover {
-    background-color: $primary;
-    color: $white;
+    background-color: variables.$primary;
+    color: variables.$white;
     text-decoration: none;
   }
 }
@@ -36,7 +37,7 @@ section.section {
   }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: variables.$breakpoint-md) {
   section.section {
     min-height: 100vh;
     
@@ -51,7 +52,7 @@ section.section {
   }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: variables.$breakpoint-lg) {
   section.section {
     padding-top: 3rem;
     padding-bottom: 3rem;

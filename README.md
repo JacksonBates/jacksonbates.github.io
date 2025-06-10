@@ -16,6 +16,7 @@ This repository contains the source code for my personal website/resume hosted a
 ### Prerequisites
 
 To modify the SCSS files, you'll need:
+- [Node.js and npm](https://nodejs.org/en/download/) - npm is the Node.js package manager and is required to install Sass. Download and install Node.js, which includes npm.
 - [Sass](https://sass-lang.com/install) - CSS preprocessor
 
 ### Compiling SCSS

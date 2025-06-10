@@ -1,6 +1,7 @@
-// filepath: /Users/jacksonbates/own/jacksonbates.github.io/src/stylesheets/_nav.scss
+@use "variables";
+
 .site-nav {
-  background-color: $primary;
+  background-color: variables.$primary;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,13 +27,13 @@
     font-weight: 800;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
-    color: $yellow; // Changed from white to yellow
+    color: variables.$yellow; // Changed from white to yellow
     text-decoration: none;
     padding: 0.75rem 1rem;
     
     &:hover, &:focus {
-      color: $primary; // Changed to purple text color on hover
-      background-color: $yellow; // Added yellow background on hover
+      color: variables.$primary; // Changed to purple text color on hover
+      background-color: variables.$yellow; // Added yellow background on hover
       opacity: 1; // Full opacity for stronger effect
     }
   }
@@ -41,7 +42,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: $white;
+    color: variables.$white;
     padding: 0.5rem;
   }
   
@@ -66,12 +67,12 @@
     background: transparent;
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 4px;
-    color: $white;
+    color: variables.$white;
     padding: 0.25rem 0.5rem;
     cursor: pointer;
     
     &:focus {
-      outline-color: $yellow;
+      outline-color: variables.$yellow;
     }
     
     &.active {
@@ -80,7 +81,7 @@
   }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: variables.$breakpoint-lg) {
   .site-nav {
     text-align: center;
     position: fixed;
@@ -88,7 +89,7 @@
     left: 0;
     right: auto;
     bottom: 0;
-    width: $sidebar-width;
+    width: variables.$sidebar-width;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,3 +1,10 @@
-// Forward core variables and mixins for use in other files
+// Forward all partials for use in resume.scss
 @forward "variables";
 @forward "mixins";
+@forward "reset";
+@forward "global";
+@forward "nav";
+@forward "resume-item";
+@forward "consulting";
+@forward "links";
+@forward "utilities";

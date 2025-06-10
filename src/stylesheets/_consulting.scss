@@ -1,3 +1,5 @@
+@use "variables";
+
 .consulting-body {
   margin: 0 auto;
   padding: 0 1em;
@@ -9,7 +11,7 @@
 }
 
 .banner {
-  background-color: $primary;
+  background-color: variables.$primary;
   padding: 2em;
   width: 100vw;
   position: relative;
@@ -21,8 +23,8 @@
   margin-bottom: 2em;
   h1,
   h2 {
-    color: $yellow;
-    text-shadow: 2px 2px 2px $dark;
+    color: variables.$yellow;
+    text-shadow: 2px 2px 2px variables.$dark;
   }
 }
 
@@ -31,8 +33,8 @@
     h1,
     h2 {
       font-size: 4rem;
-      color: $yellow;
-      text-shadow: 2px 2px 2px $dark;
+      color: variables.$yellow;
+      text-shadow: 2px 2px 2px variables.$dark;
     }
   }
 }
@@ -61,20 +63,20 @@
 .fees-card,
 .pm-card {
   flex: 0 1 300px;
-  background-color: $primary;
+  background-color: variables.$primary;
   font-size: 1.1em;
-  color: $yellow;
+  color: variables.$yellow;
   margin: 1em;
   padding: 1em;
   width: 50%;
-  box-shadow: 2px 2px 2px $dark;
+  box-shadow: 2px 2px 2px variables.$dark;
   strong {
-    text-shadow: 1px 1px 1px $dark;
+    text-shadow: 1px 1px 1px variables.$dark;
   }
   h3 {
     font-size: 3em;
-    color: $yellow;
-    text-shadow: 2px 2px 2px $dark;
+    color: variables.$yellow;
+    text-shadow: 2px 2px 2px variables.$dark;
   }
 }
 
@@ -88,7 +90,7 @@ ul.fancy-list {
 
   li::before {
     content: "\f058";
-    color: $primary;
+    color: variables.$primary;
     font-family: "Font Awesome 5 Free";
     padding: 0 10px 0 0;
   }
@@ -104,7 +106,7 @@ ul.linktree {
 
   li {
     margin: 1rem;
-    box-shadow: inset 1px 1px 0 1px $primary, 1px 1px 0 1px $primary;
+    box-shadow: inset 1px 1px 0 1px variables.$primary, 1px 1px 0 1px variables.$primary;
 
     a {
       text-decoration: none;
@@ -114,14 +116,14 @@ ul.linktree {
 
     a:focus,
     a:hover {
-      background-color: $primary;
-      color: $yellow;
+      background-color: variables.$primary;
+      color: variables.$yellow;
     }
   }
 }
 
 .link-banner {
-  background-color: $primary;
+  background-color: variables.$primary;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -134,8 +136,8 @@ ul.linktree {
   h2 {
     margin: 0;
     line-height: 1em;
-    color: $yellow;
-    text-shadow: 2px 2px 2px $dark;
+    color: variables.$yellow;
+    text-shadow: 2px 2px 2px variables.$dark;
   }
 }
 
@@ -155,7 +157,7 @@ ul.linktree {
   }
 
   .link-banner {
-    background-color: $primary;
+    background-color: variables.$primary;
     width: 100vw;
     position: relative;
     left: 50%;
@@ -168,8 +170,8 @@ ul.linktree {
     h2 {
       margin: 0;
       line-height: 1em;
-      color: $yellow;
-      text-shadow: 2px 2px 2px $dark;
+      color: variables.$yellow;
+      text-shadow: 2px 2px 2px variables.$dark;
     }
   }
 }

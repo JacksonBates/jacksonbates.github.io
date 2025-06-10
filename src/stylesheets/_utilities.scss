@@ -1,3 +1,5 @@
+@use "variables";
+
 // Custom utilities to replace Bootstrap
 // Margins and padding
 
@@ -91,7 +93,7 @@
 .align-items-stretch { align-items: stretch; }
 
 // Text utilities
-.text-primary { color: $primary; }
+.text-primary { color: variables.$primary; }
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
@@ -113,14 +115,14 @@
 }
 
 // Responsive utilities
-@media (min-width: $breakpoint-sm) {
+@media (min-width: variables.$breakpoint-sm) {
   .d-sm-none { display: none; }
   .d-sm-block { display: block; }
   .d-sm-flex { display: flex; }
   .text-sm-right { text-align: right; }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: variables.$breakpoint-md) {
   .d-md-none { display: none; }
   .d-md-block { display: block; }
   .d-md-flex { display: flex; }
@@ -128,7 +130,7 @@
   .text-md-right { text-align: right; }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: variables.$breakpoint-lg) {
   .d-lg-none { display: none; }
   .d-lg-block { display: block; }
   .p-lg-5 { padding: 3rem; }
@@ -139,10 +141,10 @@
 
 // Custom spacing for sections
 .section-padding {
-  padding: $section-padding-sm;
+  padding: variables.$section-padding-sm;
   
-  @media (min-width: $breakpoint-lg) {
-    padding: $section-padding;
+  @media (min-width: variables.$breakpoint-lg) {
+    padding: variables.$section-padding;
   }
 }
 

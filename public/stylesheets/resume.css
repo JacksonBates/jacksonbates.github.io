@@ -165,17 +165,17 @@ p.lead {
   background-color: #8e126f;
 }
 
-.dev-icons {
+dev-icons {
   font-size: 3rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
-.dev-icons .list-inline-item {
+dev-icons .list-inline-item {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
-.dev-icons .list-inline-item i:hover {
+dev-icons .list-inline-item i:hover {
   color: #8e126f;
 }
 

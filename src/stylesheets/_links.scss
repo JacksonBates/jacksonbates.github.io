@@ -1,9 +1,11 @@
+@use "variables";
+
 // Custom styles for links
 // Specific styling for contact email and inline content links
 
 // General link styling - with increased specificity
 html body a {
-  color: $primary;
+  color: variables.$primary;
   text-decoration: none !important;
 }
 
@@ -11,27 +13,27 @@ html body a:hover,
 html body a:focus,
 html body a:active {
   text-decoration: underline !important;
-  color: $primary; // Keep the same color on hover
+  color: variables.$primary; // Keep the same color on hover
 }
 
 html body a:visited {
-  color: $primary; // Keep the same color for visited links
+  color: variables.$primary; // Keep the same color for visited links
 }
 
 // More specific styling for contact email and inline links
 .subheading a,
 .lead span a {
-  color: $primary;
+  color: variables.$primary;
   text-decoration: none !important;
   
   &:hover,
   &:focus,
   &:active {
     text-decoration: underline !important;
-    color: $primary; // Keep the same color on hover
+    color: variables.$primary; // Keep the same color on hover
   }
   
   &:visited {
-    color: $primary; // Keep the same color for visited links
+    color: variables.$primary; // Keep the same color for visited links
   }
 }
