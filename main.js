@@ -1,7 +1,7 @@
 // Vanilla JS replacement for jQuery functionality
 document.addEventListener("DOMContentLoaded", function () {
   // Smooth scrolling for navigation links
-  document.querySelectorAll(".nav-link").forEach((link) => {
+  document.querySelectorAll(".site-nav__link").forEach((link) => {
     link.addEventListener("click", function (e) {
       const target = this.getAttribute("href");
       if (target.startsWith("#")) {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (navMenu && navMenu.classList.contains("active")) {
             navMenu.classList.remove("active");
             document
-              .querySelector(".navbar-toggler")
+              .querySelector(".site-nav__toggler")
               .classList.remove("active");
           }
         }
@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Mobile menu toggle
-  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarToggler = document.querySelector(".site-nav__toggler");
   if (navbarToggler) {
     navbarToggler.addEventListener("click", function () {
-      const navbarMenu = document.getElementById("navbarMenu");
-      navbarMenu.classList.toggle("active");
+      const navMenu = document.getElementById("navbarMenu");
+      navMenu.classList.toggle("active");
       this.classList.toggle("active");
     });
   }

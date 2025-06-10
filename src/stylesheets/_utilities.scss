@@ -1,173 +1,55 @@
 @use "variables";
 
-// Custom utilities to replace Bootstrap
-// Margins and padding
+// Minimal set of utility classes
+// Only keeping the most essential ones that make sense as utilities
 
-// Margin utilities
-.m-0 { margin: 0; }
-.mt-0 { margin-top: 0; }
-.mb-0 { margin-bottom: 0; }
-.ml-0 { margin-left: 0; }
-.mr-0 { margin-right: 0; }
+// Text color for the primary brand color - used sparingly
+.text-primary { 
+  color: variables.$primary; 
+}
 
-.m-1 { margin: 0.25rem; }
-.mt-1 { margin-top: 0.25rem; }
-.mb-1 { margin-bottom: 0.25rem; }
-.ml-1 { margin-left: 0.25rem; }
-.mr-1 { margin-right: 0.25rem; }
+// Simple responsive visibility helpers
+.hidden-mobile {
+  display: none;
+  
+  @media (min-width: variables.$breakpoint-lg) {
+    display: block;
+  }
+}
 
-.m-2 { margin: 0.5rem; }
-.mt-2 { margin-top: 0.5rem; }
-.mb-2 { margin-bottom: 0.5rem; }
-.ml-2 { margin-left: 0.5rem; }
-.mr-2 { margin-right: 0.5rem; }
+.visible-mobile {
+  display: block;
+  
+  @media (min-width: variables.$breakpoint-lg) {
+    display: none;
+  }
+}
 
-.m-3 { margin: 1rem; }
-.mt-3 { margin-top: 1rem; }
-.mb-3 { margin-bottom: 1rem; }
-.ml-3 { margin-left: 1rem; }
-.mr-3 { margin-right: 1rem; }
+// Accessibility utilities
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
-.m-4 { margin: 1.5rem; }
-.mt-4 { margin-top: 1.5rem; }
-.mb-4 { margin-bottom: 1.5rem; }
-.ml-4 { margin-left: 1.5rem; }
-.mr-4 { margin-right: 1.5rem; }
+// Common centering utilities that make sense across components
+.text-center { 
+  text-align: center; 
+}
 
-.m-5 { margin: 3rem; }
-.mt-5 { margin-top: 3rem; }
-.mb-5 { margin-bottom: 3rem; }
-.ml-5 { margin-left: 3rem; }
-.mr-5 { margin-right: 3rem; }
-
-// Padding utilities
-.p-0 { padding: 0; }
-.pt-0 { padding-top: 0; }
-.pb-0 { padding-bottom: 0; }
-.pl-0 { padding-left: 0; }
-.pr-0 { padding-right: 0; }
-
-.p-1 { padding: 0.25rem; }
-.pt-1 { padding-top: 0.25rem; }
-.pb-1 { padding-bottom: 0.25rem; }
-.pl-1 { padding-left: 0.25rem; }
-.pr-1 { padding-right: 0.25rem; }
-
-.p-2 { padding: 0.5rem; }
-.pt-2 { padding-top: 0.5rem; }
-.pb-2 { padding-bottom: 0.5rem; }
-.pl-2 { padding-left: 0.5rem; }
-.pr-2 { padding-right: 0.5rem; }
-
-.p-3 { padding: 1rem; }
-.pt-3 { padding-top: 1rem; }
-.pb-3 { padding-bottom: 1rem; }
-.pl-3 { padding-left: 1rem; }
-.pr-3 { padding-right: 1rem; }
-
-.p-4 { padding: 1.5rem; }
-.pt-4 { padding-top: 1.5rem; }
-.pb-4 { padding-bottom: 1.5rem; }
-.pl-4 { padding-left: 1.5rem; }
-.pr-4 { padding-right: 1.5rem; }
-
-.p-5 { padding: 3rem; }
-.pt-5 { padding-top: 3rem; }
-.pb-5 { padding-bottom: 3rem; }
-.pl-5 { padding-left: 3rem; }
-.pr-5 { padding-right: 3rem; }
-
-// Flex utilities
-.d-flex { display: flex; }
-.flex-column { flex-direction: column; }
-.flex-row { flex-direction: row; }
-.justify-content-start { justify-content: flex-start; }
-.justify-content-end { justify-content: flex-end; }
-.justify-content-center { justify-content: center; }
-.justify-content-between { justify-content: space-between; }
-.justify-content-around { justify-content: space-around; }
-.align-items-start { align-items: flex-start; }
-.align-items-end { align-items: flex-end; }
-.align-items-center { align-items: center; }
-.align-items-baseline { align-items: baseline; }
-.align-items-stretch { align-items: stretch; }
-
-// Text utilities
-.text-primary { color: variables.$primary; }
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-
-// Display utilities for responsive design
-.d-none { display: none; }
-.d-block { display: block; }
-.d-inline { display: inline; }
-.d-inline-block { display: inline-block; }
-
-// Layout helpers
-.w-100 { width: 100%; }
-.h-100 { height: 100%; }
-
-// Horizontal centering
 .mx-auto { 
   margin-left: auto; 
   margin-right: auto; 
 }
 
-// Responsive utilities
-@media (min-width: variables.$breakpoint-sm) {
-  .d-sm-none { display: none; }
-  .d-sm-block { display: block; }
-  .d-sm-flex { display: flex; }
-  .text-sm-right { text-align: right; }
-}
-
-@media (min-width: variables.$breakpoint-md) {
-  .d-md-none { display: none; }
-  .d-md-block { display: block; }
-  .d-md-flex { display: flex; }
-  .flex-md-row { flex-direction: row; }
-  .text-md-right { text-align: right; }
-}
-
-@media (min-width: variables.$breakpoint-lg) {
-  .d-lg-none { display: none; }
-  .d-lg-block { display: block; }
-  .p-lg-5 { padding: 3rem; }
-}
-
-// Border utilities
-.rounded-circle { border-radius: 50%; }
-
-// Custom spacing for sections
-.section-padding {
-  padding: variables.$section-padding-sm;
-  
-  @media (min-width: variables.$breakpoint-lg) {
-    padding: variables.$section-padding;
-  }
-}
-
-// Image utilities
+// Image accessibility utility
 .img-fluid {
   max-width: 100%;
   height: auto;
-}
-
-// List utilities
-.list-inline {
-  padding-left: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.list-inline-item {
-  display: inline-block;
-  margin-right: 0.5rem;
-  
-  &:last-child {
-    margin-right: 0;
-  }
 }

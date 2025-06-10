@@ -31,61 +31,59 @@
 
   <body id="page-top">
     <nav class="site-nav">
-      <div class="nav-header">
-        <a class="nav-brand d-block d-lg-none" href="#page-top">
+      <div class="site-nav__header">
+        <a class="site-nav__brand visible-mobile" href="#page-top">
           Jackson Bates
         </a>
         <button
-          class="navbar-toggler"
+          class="site-nav__toggler"
           type="button"
           aria-label="Toggle navigation"
         >
           <i class="fas fa-bars"></i>
         </button>
       </div>
-      <div class="d-none d-lg-block">
-        <span class="d-none d-lg-block">
-          <img
-            class="img-fluid rounded-circle mx-auto mb-2"
-            src="public/images/minimized_headshot.jpg"
-            alt="Jackson Bates"
-          />
-        </span>
+      <div class="site-nav__profile hidden-mobile">
+        <img
+          class="site-nav__profile-image"
+          src="public/images/minimized_headshot.jpg"
+          alt="Jackson Bates"
+        />
       </div>
-      <ul class="nav-list" id="navbarMenu">
-        <li class="nav-item">
-          <a class="nav-link" href="#page-top">About</a>
+      <ul class="site-nav__list" id="navbarMenu">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#page-top">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#skills">Skills</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#experience">Experience</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#portfolio">Portfolio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://blog.jacksonbates.com">Writing</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="https://blog.jacksonbates.com">Writing</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://youtube.com/jacksonbates"
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="https://youtube.com/jacksonbates"
             >YouTube</a
           >
         </li>
       </ul>
     </nav>
-    <div class="container p-0">
-      <section class="section d-flex align-items-center" id="about">
-        <div class="w-100">
-          <h1 class="mb-0">
+    <div class="container">
+      <section class="section" id="about">
+        <div class="section__content">
+          <h1 class="section__title">
             Jackson
             <span class="text-primary">Bates</span>
           </h1>
-          <div class="subheading mb-5">
+          <div class="subheading subheading--contact">
             Melbourne, Australia
           </div>
-          <p class="lead mb-5">
+          <p class="lead section__text">
             I am currently an Engineering Manager at
             <span><a href="https://getatomi.com">Atomi</a></span
             >, a Edutech platform for high school students and teachers.
@@ -107,13 +105,13 @@
         </div>
       </section>
 
-      <hr class="m-0" />
+      <hr />
 
-      <section class="section d-flex align-items-center" id="skills">
-        <div class="w-100">
-          <h2 class="mb-5">Skills</h2>
+      <section class="section" id="skills">
+        <div class="section__content">
+          <h2 class="section__title">Skills</h2>
 
-          <p class="lead mb-5">
+          <p class="lead section__text">
             I've worked professionally with a range of languages and technology
             stacks, but my heart is always in TypeScript. My current
             professional work is with React, TypeScript, GraphQL, NodeJS and
@@ -123,58 +121,58 @@
             pretext presents itself.
           </p>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
+          <div class="subheading">Programming Languages &amp; Tools</div>
+          <ul class="dev-icons">
+            <li class="dev-icons__item">
               <i class="fab fa-html5"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-css3-alt"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-sass"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-node-js"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-react"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-php"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-laravel"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-linux"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-atlassian"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-aws"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="dev-icons__item">
               <i class="fab fa-git"></i>
             </li>
           </ul>
 
-          <div class="subheading mb-3">Dispositions</div>
-          <ul class="fa-ul mb-0">
-            <li>
+          <div class="subheading">Dispositions</div>
+          <ul class="skills-list fa-ul">
+            <li class="skills-list__item">
               <i class="fa-li fa fa-check"></i>
               Tinkerer: dedicated problem solver
             </li>
-            <li>
+            <li class="skills-list__item">
               <i class="fa-li fa fa-check"></i>
               Former consultant: fast learner
             </li>
-            <li>
+            <li class="skills-list__item">
               <i class="fa-li fa fa-check"></i>
               Former teacher: expert communicator and mentor
             </li>
-            <li>
+            <li class="skills-list__item">
               <i class="fa-li fa fa-check"></i>
               Independent team member: I don't need my hand held, but I play
               well with others
@@ -183,121 +181,109 @@
         </div>
       </section>
 
-      <hr class="m-0" />
+      <hr />
 
-      <section class="section d-flex justify-content-center" id="experience">
-        <div class="w-100">
-          <h2 class="mb-5">Experience</h2>
+      <section class="section experience-section" id="experience">
+        <div class="section__content">
+          <h2 class="section__title">Experience</h2>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Engineering Manager</h3>
-              <div class="subheading mb-3">Atomi</div>
-              <p>Engineer Manager for a growing Australian Edutech company.</p>
+          <div class="resume-item">
+            <div class="resume-item__content">
+              <h3 class="position-title">Engineering Manager</h3>
+              <div class="company-name subheading">Atomi</div>
+              <p class="position-description">Engineer Manager for a growing Australian Edutech company.</p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-item__date">
               <span class="text-primary">August 2022 - Present</span>
             </div>
           </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Chief Technical Officer</h3>
-              <div class="subheading mb-3">Grace Papers</div>
-              <p>
+          <div class="resume-item">
+            <div class="resume-item__content">
+              <h3 class="position-title">Chief Technical Officer</h3>
+              <div class="company-name subheading">Grace Papers</div>
+              <p class="position-description">
                 CTO for a company dedicated to social change working with
                 household names nationally.
               </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-item__date">
               <span class="text-primary">October 2021 - August 2022</span>
             </div>
           </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Lead Software Engineer</h3>
-              <div class="subheading mb-3">Grace Papers</div>
-              <p>
+          <div class="resume-item">
+            <div class="resume-item__content">
+              <h3 class="position-title">Lead Software Engineer</h3>
+              <div class="company-name subheading">Grace Papers</div>
+              <p class="position-description">
                 Engineering Lead for a company dedicated to social change
                 working with household names nationally.
               </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-item__date">
               <span class="text-primary">December 2019 - October 2021</span>
             </div>
           </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Software Engineer | Consultant</h3>
-              <div class="subheading mb-3">Silverpond</div>
-              <p>
+          <div class="resume-item">
+            <div class="resume-item__content">
+              <h3 class="position-title">Software Engineer | Consultant</h3>
+              <div class="company-name subheading">Silverpond</div>
+              <p class="position-description">
                 Building web applications that support Machine Learning work in
                 industries with large scale asset inspection requirements,
                 wildlife conservation, and retail.
               </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-item__date">
               <span class="text-primary">July 2018 - December 2019</span>
             </div>
           </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Moderator, Writer, Odd-Jobs Man</h3>
-              <div class="subheading mb-3">freeCodeCamp</div>
-              <p>
+          <div class="resume-item">
+            <div class="resume-item__content">
+              <h3 class="position-title">Moderator, Writer, Odd-Jobs Man</h3>
+              <div class="company-name subheading">freeCodeCamp</div>
+              <p class="position-description">
                 Supporting learner developers in their goals to learn coding and
                 become employable.
               </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-item__date">
               <span class="text-primary">September 2016 - Present</span>
             </div>
           </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0" style="margin-top: 3rem">
+          <div class="resume-item">
+            <div class="resume-item__content">
+              <h3 class="position-title historical-position">
                 English Teacher, IT Teacher, Department Head,
               </h3>
-              <div class="subheading mb-3">
+              <div class="company-name subheading">
                 Various Schools, UK &amp; Australia
               </div>
-              <p>
+              <p class="position-description">
                 Once upon a time, I was a Senior Teacher, Head of English, and
                 Coordinator of Learning Technologies. There were useful
                 parallels between my first career and my current one - you can
                 ask me about them sometime!
               </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-item__date">
               <span class="text-primary">Ancient History (2005-2017)</span>
             </div>
           </div>
         </div>
       </section>
 
-      <hr class="m-0" />
+      <hr />
 
-      <section class="section d-flex justify-content-center" id="portfolio">
-        <div class="w-100">
-          <h2 class="mb-5">Samples</h2>
+      <section class="section" id="portfolio">
+        <div class="section__content">
+          <h2 class="section__title">Samples</h2>
 
-          <p>
+          <p class="section__text">
             My professional work all lives in private repos and is bound by
             NDAs. Fear not, you can see my second rate hack-jobs here at least!
             Here are some side projects and itch-scratchers that are at least

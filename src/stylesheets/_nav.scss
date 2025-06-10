@@ -8,37 +8,39 @@
   right: 0;
   z-index: 1000;
   
-  .nav-list {
+  &__list {
     display: none;
     flex-direction: column;
     width: 100%;
+    margin: 0;
+    padding: 0;
     
     &.active {
       display: flex;
     }
   }
   
-  .nav-item {
+  &__item {
     list-style: none;
   }
   
-  .nav-link {
+  &__link {
     display: block;
     font-weight: 800;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
-    color: variables.$yellow; // Changed from white to yellow
+    color: variables.$yellow;
     text-decoration: none;
     padding: 0.75rem 1rem;
     
     &:hover, &:focus {
-      color: variables.$primary; // Changed to purple text color on hover
-      background-color: variables.$yellow; // Added yellow background on hover
-      opacity: 1; // Full opacity for stronger effect
+      color: variables.$primary;
+      background-color: variables.$yellow;
+      opacity: 1;
     }
   }
   
-  .nav-brand {
+  &__brand {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -46,27 +48,31 @@
     padding: 0.5rem;
   }
   
-  // Profile image container
-  .d-lg-block {
+  &__profile {
     padding: 1rem;
     
-    img {
+    &-image {
       padding: 0.5rem;
       border: 0.5rem solid #fff760;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
     }
   }
   
-  .nav-header {
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem; // Add horizontal padding for spacing from edges
-    box-shadow: 0 2px 4px rgba(0,0,0,0.04); // Subtle shadow for separation
-    background: variables.$primary; // Ensure background is consistent
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    background: variables.$primary;
   }
   
-  .navbar-toggler {
+  &__toggler {
     background: transparent;
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 4px;
@@ -97,23 +103,25 @@
     flex-direction: column;
     justify-content: center;
     
-    .nav-list {
+    &__list {
       display: flex;
       margin-top: 2rem;
     }
     
-    .navbar-toggler {
+    &__toggler {
       display: none;
     }
     
-    .nav-header {
+    &__header {
       justify-content: center;
     }
     
-    .nav-brand {
-      margin-right: auto;
-      margin-left: auto;
+    &__brand {
       display: none; // Hide nav-brand on large screens
+    }
+    
+    &__profile {
+      display: block;
     }
   }
 }
