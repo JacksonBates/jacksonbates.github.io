@@ -56,26 +56,6 @@
   }
 }
 
-// Portfolio/samples section styles
-.portfolio-link {
-  border: 1px solid variables.$primary;
-  padding: 0.5em;
-  margin: 16px;
-  border-radius: 5px;
-  text-decoration: none;
-
-  &:hover {
-    background-color: variables.$primary;
-    color: variables.$white;
-    text-decoration: none;
-  }
-}
-
-.portfolio-links {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 // Section styling enhancements
 section.section {
   padding-top: 5rem;

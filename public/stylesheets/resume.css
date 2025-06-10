@@ -481,24 +481,6 @@ article {
   margin-top: 3rem;
 }
 
-.portfolio-link {
-  border: 1px solid #8e126f;
-  padding: 0.5em;
-  margin: 16px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-.portfolio-link:hover {
-  background-color: #8e126f;
-  color: #fff;
-  text-decoration: none;
-}
-
-.portfolio-links {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 section.section {
   padding-top: 5rem;
   padding-bottom: 5rem;
