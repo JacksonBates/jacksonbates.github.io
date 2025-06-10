@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
 
           // Close mobile menu if open
-          const navMenu = document.getElementById("navbarMenu");
+          const navMenu = document.querySelector(".site-nav__list");
           if (navMenu && navMenu.classList.contains("active")) {
             navMenu.classList.remove("active");
             document
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navbarToggler = document.querySelector(".site-nav__toggler");
   if (navbarToggler) {
     navbarToggler.addEventListener("click", function () {
-      const navMenu = document.getElementById("navbarMenu");
+      const navMenu = document.querySelector(".site-nav__list");
       navMenu.classList.toggle("active");
       this.classList.toggle("active");
     });
