@@ -61,6 +61,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 1rem; // Add horizontal padding for spacing from edges
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04); // Subtle shadow for separation
+    background: variables.$primary; // Ensure background is consistent
   }
   
   .navbar-toggler {
@@ -68,7 +71,7 @@
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 4px;
     color: variables.$white;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.75rem; 
     cursor: pointer;
     
     &:focus {
