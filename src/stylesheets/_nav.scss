@@ -29,23 +29,31 @@
     font-weight: 800;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
-    color: variables.$yellow;
-    text-decoration: none;
+    color: variables.$yellow !important;
+    text-decoration: none !important;
     padding: 0.75rem 1rem;
     
     &:hover, &:focus {
-      color: variables.$primary;
+      color: variables.$primary !important;
       background-color: variables.$yellow;
       opacity: 1;
+      text-decoration: none !important;
     }
   }
   
   &__brand {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: variables.$white;
+    text-decoration: none !important;
+    color: variables.$yellow !important;
     padding: 0.5rem;
+    
+    &:hover, &:focus {
+      color: variables.$primary !important;
+      background-color: variables.$yellow;
+      opacity: 1;
+      text-decoration: none !important;
+    }
   }
   
   &__profile {

@@ -337,21 +337,28 @@ article {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  color: #fff760;
-  text-decoration: none;
+  color: #fff760 !important;
+  text-decoration: none !important;
   padding: 0.75rem 1rem;
 }
 .site-nav__link:hover, .site-nav__link:focus {
-  color: #8e126f;
+  color: #8e126f !important;
   background-color: #fff760;
   opacity: 1;
+  text-decoration: none !important;
 }
 .site-nav__brand {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none !important;
+  color: #fff760 !important;
   padding: 0.5rem;
+}
+.site-nav__brand:hover, .site-nav__brand:focus {
+  color: #8e126f !important;
+  background-color: #fff760;
+  opacity: 1;
+  text-decoration: none !important;
 }
 .site-nav__profile {
   padding: 1rem;
@@ -668,19 +675,15 @@ ul.linktree li a:hover {
     text-shadow: 2px 2px 2px #343a40;
   }
 }
-html body a {
+html body a:not([class^=site-nav]) {
   color: #8e126f;
   text-decoration: none !important;
 }
-
-html body a:hover,
-html body a:focus,
-html body a:active {
+html body a:not([class^=site-nav]):hover, html body a:not([class^=site-nav]):focus, html body a:not([class^=site-nav]):active {
   text-decoration: underline !important;
   color: #8e126f;
 }
-
-html body a:visited {
+html body a:not([class^=site-nav]):visited {
   color: #8e126f;
 }
 
