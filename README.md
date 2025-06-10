@@ -60,7 +60,6 @@ git push origin master
 
 ## External Dependencies
 
-- [Bootstrap](https://getbootstrap.com/) (via CDN)
 - [Font Awesome](https://fontawesome.com/) (included in repo)
-- [jQuery](https://jquery.com/) (via CDN)
-- [jQuery Easing](https://jqueryui.com/easing/) (via CDN)
+
+The site uses vanilla JavaScript and custom SASS styles for all functionality and styling.
