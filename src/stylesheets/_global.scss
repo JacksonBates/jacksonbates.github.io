@@ -18,6 +18,17 @@ body {
   font-weight: 400;
 }
 
+// Global link styling
+a {
+  color: variables.$primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 @media (min-width: variables.$breakpoint-lg) {
   body {
     padding-top: 0;

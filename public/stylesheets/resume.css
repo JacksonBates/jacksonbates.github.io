@@ -80,6 +80,14 @@ body {
   font-weight: 400;
 }
 
+a {
+  color: #8e126f;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
@@ -587,35 +595,6 @@ ul.linktree li a:hover {
     text-shadow: 2px 2px 2px #343a40;
   }
 }
-html body a:not([class^=site-nav]) {
-  color: #8e126f;
-  text-decoration: none !important;
-}
-html body a:not([class^=site-nav]):hover, html body a:not([class^=site-nav]):focus, html body a:not([class^=site-nav]):active {
-  text-decoration: underline !important;
-  color: #8e126f;
-}
-html body a:not([class^=site-nav]):visited {
-  color: #8e126f;
-}
-
-.subheading a,
-.lead span a {
-  color: #8e126f;
-  text-decoration: none !important;
-}
-.subheading a:hover, .subheading a:focus, .subheading a:active,
-.lead span a:hover,
-.lead span a:focus,
-.lead span a:active {
-  text-decoration: underline !important;
-  color: #8e126f;
-}
-.subheading a:visited,
-.lead span a:visited {
-  color: #8e126f;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
