@@ -3,28 +3,6 @@
 // Minimal set of utility classes
 // Only keeping the most essential ones that make sense as utilities
 
-// Text color for the primary brand color - used sparingly
-.text-primary { 
-  color: variables.$primary; 
-}
-
-// Simple responsive visibility helpers
-.hidden-mobile {
-  display: none;
-  
-  @media (min-width: variables.$breakpoint-lg) {
-    display: block;
-  }
-}
-
-.visible-mobile {
-  display: block;
-  
-  @media (min-width: variables.$breakpoint-lg) {
-    display: none;
-  }
-}
-
 // Accessibility utilities
 .sr-only {
   position: absolute;
@@ -46,10 +24,4 @@
 .mx-auto { 
   margin-left: auto; 
   margin-right: auto; 
-}
-
-// Image accessibility utility
-.img-fluid {
-  max-width: 100%;
-  height: auto;
 }

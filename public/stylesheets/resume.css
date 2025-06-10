@@ -616,28 +616,6 @@ html body a:not([class^=site-nav]):visited {
   color: #8e126f;
 }
 
-.text-primary {
-  color: #8e126f;
-}
-
-.hidden-mobile {
-  display: none;
-}
-@media (min-width: 992px) {
-  .hidden-mobile {
-    display: block;
-  }
-}
-
-.visible-mobile {
-  display: block;
-}
-@media (min-width: 992px) {
-  .visible-mobile {
-    display: none;
-  }
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -657,11 +635,6 @@ html body a:not([class^=site-nav]):visited {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
 }
 
 /*# sourceMappingURL=resume.css.map */
