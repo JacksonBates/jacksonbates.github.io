@@ -113,6 +113,7 @@
     .nav-brand {
       margin-right: auto;
       margin-left: auto;
+      display: none; // Hide nav-brand on large screens
     }
   }
 }

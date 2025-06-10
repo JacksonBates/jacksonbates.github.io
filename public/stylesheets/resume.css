@@ -340,6 +340,7 @@ article {
   .site-nav .nav-brand {
     margin-right: auto;
     margin-left: auto;
+    display: none;
   }
 }
 .portfolio-link {
