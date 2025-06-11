@@ -133,7 +133,7 @@ h3,
     height: 3.5rem;
     width: 3.5rem;
     background-color: variables.$gray-700;
-    color: variables.$white !important;
+    color: variables.$white;
     border-radius: 100%;
     text-align: center;
     font-size: 1.5rem;
@@ -249,13 +249,13 @@ article {
   a.portfolio-link {
     padding: 0.5rem 1rem;
     background-color: variables.$primary;
-    color: white !important;
+    color: white;
     border-radius: 4px;
     transition: background-color 0.2s ease;
     
     &:hover {
       background-color: color.adjust(variables.$primary, $lightness: -10%);
-      text-decoration: none !important;
+      text-decoration: none;
     }
   }
 }
