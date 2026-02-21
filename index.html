@@ -1,385 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Jackson Bates is a Melbourne based Software Engineer, and currently an Engineering Manager at Atomi."
-    />
-    <link
-      rel="preload"
-      href="fontawesome-free/css/all.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap"
-    />
-    <noscript>
-      <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
-    </noscript>
-    <link href="./public/stylesheets/resume.css" rel="stylesheet" />
-    <title>Jackson Bates | Software Engineer Melbourne</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jackson Bates — Engineering Manager, Melbourne. Empathetic leadership, product thinking, pragmatic delivery." />
+  <title>Jackson Bates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <body id="page-top">
-    <nav class="site-nav">
-      <div class="site-nav__header">
-        <a class="site-nav__brand visible-mobile" href="#page-top">
-          Jackson Bates
-        </a>
-        <button
-          class="site-nav__toggler"
-          type="button"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-      <div class="site-nav__profile hidden-mobile">
-        <img
-          class="site-nav__profile-image"
-          src="public/images/minimized_headshot.jpg"
-          alt="Jackson Bates"
-        />
-      </div>
-      <ul class="site-nav__list" id="navbarMenu">
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="#page-top">About</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="#skills">Skills</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="#experience">Experience</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="https://blog.jacksonbates.com">Writing</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="https://youtube.com/jacksonbates"
-            >YouTube</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <div class="container">
-      <section class="section" id="about">
-        <div class="section__content">
-          <h1 class="section__title">
-            Jackson
-            <span class="text-primary">Bates</span>
-          </h1>
-          <div class="subheading subheading--contact">
-            Melbourne, Australia
-          </div>
-          <p class="lead section__text">
-            I am currently an Engineering Manager at
-            <span><a href="https://getatomi.com">Atomi</a></span
-            >, a Edutech platform for high school students and teachers.
-          </p>
-          <div class="social-icons">
-            <a href="https://linkedin.com/in/jackson-bates" aria-label="LinkedIn Profile">
-              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/JacksonBates" aria-label="GitHub Profile">
-              <i class="fab fa-github" aria-hidden="true"></i>
-            </a>
-            <a rel="me" href="https://aus.social/web/@JacksonBates" aria-label="Mastodon Profile">
-              <i class="fab fa-mastodon" aria-hidden="true"></i>
-            </a>
-            <a href="https://youtube.com/JacksonBates" aria-label="YouTube Channel">
-              <i class="fab fa-youtube" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </section>
+    :root {
+      --ink: #1a1714;
+      --paper: #f5f0e8;
+      --paper-dark: #ede8dc;
+      --accent: #c84b2f;
+      --accent-muted: #e8896e;
+      --mid: #6b6560;
+      --rule: #d4cdc0;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+      --mono: 'DM Mono', monospace;
+    }
 
-      <hr />
+    html { scroll-behavior: smooth; }
 
-      <section class="section" id="skills">
-        <div class="section__content">
-          <h2 class="section__title">Skills</h2>
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
-          <p class="lead section__text">
-            I've worked professionally with a range of languages and technology
-            stacks, but my heart is always in TypeScript. My current
-            professional work is with React, TypeScript, GraphQL, NodeJS and
-            PrismaJS, but I've also had occasion to work with Ruby on Rails,
-            Python, and Clojurescript. I also have an unhealthy obsession with
-            writing quick and dirty scripts in Bash whenever the thinnest
-            pretext presents itself.
-          </p>
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: var(--paper);
+      border-bottom: 1px solid var(--rule);
+      backdrop-filter: blur(8px);
+    }
 
-          <div class="subheading">Programming Languages &amp; Tools</div>
-          <ul class="dev-icons">
-            <li class="dev-icons__item">
-              <i class="fab fa-html5" aria-hidden="true"></i><span class="sr-only">HTML5</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-css3-alt" aria-hidden="true"></i><span class="sr-only">CSS3</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-sass" aria-hidden="true"></i><span class="sr-only">Sass</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-node-js" aria-hidden="true"></i><span class="sr-only">Node.js</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-react" aria-hidden="true"></i><span class="sr-only">React</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-php" aria-hidden="true"></i><span class="sr-only">PHP</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-laravel" aria-hidden="true"></i><span class="sr-only">Laravel</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-linux" aria-hidden="true"></i><span class="sr-only">Linux</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-atlassian" aria-hidden="true"></i><span class="sr-only">Atlassian</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-aws" aria-hidden="true"></i><span class="sr-only">Amazon Web Services</span>
-            </li>
-            <li class="dev-icons__item">
-              <i class="fab fa-git" aria-hidden="true"></i><span class="sr-only">Git</span>
-            </li>
-          </ul>
+    .nav-brand {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+      text-decoration: none;
+    }
 
-          <div class="subheading">Dispositions</div>
-          <ul class="skills-list fa-ul">
-            <li class="skills-list__item">
-              <i class="fa-li fa fa-check"></i>
-              Tinkerer: dedicated problem solver
-            </li>
-            <li class="skills-list__item">
-              <i class="fa-li fa fa-check"></i>
-              Former consultant: fast learner
-            </li>
-            <li class="skills-list__item">
-              <i class="fa-li fa fa-check"></i>
-              Former teacher: expert communicator and mentor
-            </li>
-            <li class="skills-list__item">
-              <i class="fa-li fa fa-check"></i>
-              Independent team member: I don't need my hand held, but I play
-              well with others
-            </li>
-          </ul>
-        </div>
-      </section>
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
 
-      <hr />
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
 
-      <section class="section experience-section" id="experience">
-        <div class="section__content">
-          <h2 class="section__title">Experience</h2>
+    .nav-links a:hover { color: var(--accent); }
 
-          <div class="resume-item">
-            <div class="resume-item__content">
-              <h3 class="position-title">Engineering Manager</h3>
-              <div class="company-name subheading">Atomi</div>
-              <p class="position-description">Engineer Manager for a growing Australian Edutech company.</p>
-            </div>
-            <div class="resume-item__date">
-              <span class="text-primary">August 2022 - Present</span>
-            </div>
-          </div>
+    /* ── SECTIONS ── */
+    section {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
 
-          <div class="resume-item">
-            <div class="resume-item__content">
-              <h3 class="position-title">Chief Technical Officer</h3>
-              <div class="company-name subheading">Grace Papers</div>
-              <p class="position-description">
-                CTO for a company dedicated to social change working with
-                household names nationally.
-              </p>
-            </div>
-            <div class="resume-item__date">
-              <span class="text-primary">October 2021 - August 2022</span>
-            </div>
-          </div>
+    section + section {
+      border-top: 1px solid var(--rule);
+    }
 
-          <div class="resume-item">
-            <div class="resume-item__content">
-              <h3 class="position-title">Lead Software Engineer</h3>
-              <div class="company-name subheading">Grace Papers</div>
-              <p class="position-description">
-                Engineering Lead for a company dedicated to social change
-                working with household names nationally.
-              </p>
-            </div>
-            <div class="resume-item__date">
-              <span class="text-primary">December 2019 - October 2021</span>
-            </div>
-          </div>
+    /* ── HERO ── */
+    #hero {
+      padding-top: 11rem;
+      padding-bottom: 6rem;
+      max-width: 900px;
+    }
 
-          <div class="resume-item">
-            <div class="resume-item__content">
-              <h3 class="position-title">Software Engineer | Consultant</h3>
-              <div class="company-name subheading">Silverpond</div>
-              <p class="position-description">
-                Building web applications that support Machine Learning work in
-                industries with large scale asset inspection requirements,
-                wildlife conservation, and retail.
-              </p>
-            </div>
-            <div class="resume-item__date">
-              <span class="text-primary">July 2018 - December 2019</span>
-            </div>
-          </div>
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
 
-          <div class="resume-item">
-            <div class="resume-item__content">
-              <h3 class="position-title">Moderator, Writer, Odd-Jobs Man</h3>
-              <div class="company-name subheading">freeCodeCamp</div>
-              <p class="position-description">
-                Supporting learner developers in their goals to learn coding and
-                become employable.
-              </p>
-            </div>
-            <div class="resume-item__date">
-              <span class="text-primary">September 2016 - Present</span>
-            </div>
-          </div>
+    .hero-eyebrow::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--accent);
+    }
 
-          <div class="resume-item">
-            <div class="resume-item__content">
-              <h3 class="position-title historical-position">
-                English Teacher, IT Teacher, Department Head,
-              </h3>
-              <div class="company-name subheading">
-                Various Schools, UK &amp; Australia
-              </div>
-              <p class="position-description">
-                Once upon a time, I was a Senior Teacher, Head of English, and
-                Coordinator of Learning Technologies. There were useful
-                parallels between my first career and my current one - you can
-                ask me about them sometime!
-              </p>
-            </div>
-            <div class="resume-item__date">
-              <span class="text-primary">Ancient History (2005-2017)</span>
-            </div>
-          </div>
-        </div>
-      </section>
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(3.5rem, 8vw, 6.5rem);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+    }
 
-      <hr />
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
 
-      <section class="section" id="portfolio">
-        <div class="section__content">
-          <h2 class="section__title">Samples</h2>
+    .hero-sub {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
 
-          <p class="section__text">
-            My professional work all lives in private repos and is bound by
-            NDAs. Fear not, you can see my second rate hack-jobs here at least!
-            Here are some side projects and itch-scratchers that are at least
-            <em>vaguely</em> presentable, but also some articles and podcasts
-            that I have written or been involved in.
-          </p>
-          <section class="gallery">
-            <div class="sample-card">
-              <h3>
-                From high school English teacher to Software Engineer at a
-                Machine Learning company (Podcast)
-              </h3>
-              <p>
-                A podcast interview, in which I shared my story about becoming a
-                Software Engineer, being involved in open source, and mentoring
-                others in the coding journeys.
-              </p>
-              <div class="portfolio-links">
-                <a
-                  class="portfolio-link"
-                  href="https://podcast.freecodecamp.org/ep-83-from-high-school-english-teacher-to-software-engineer-at-a-machine-learning-company"
-                  >Podcast link</a
-                >
-              </div>
-            </div>
+    .hero-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
 
-            <div class="sample-card">
-              <h3>How to Attract and Retain Talent (Podcast)</h3>
-              <p>
-                A podcast panel, in which I discussed hiring and retention. I
-                specifically focused on the challenges inherent in doing so at a
-                very small company.
-              </p>
-              <div class="portfolio-links">
-                <a
-                  class="portfolio-link"
-                  href="https://open.spotify.com/episode/0wVPwcHGavraYamHPBfu0N"
-                  >Podcast link</a
-                >
-              </div>
-            </div>
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+      transition: background 0.2s, color 0.2s;
+    }
 
-            <div class="sample-card">
-              <h3>What running taught me about persistence and programming</h3>
-              <p>
-                A blog post I wrote about the parallels between running and
-                programming. It was a silly idea that came to paradoxical
-                conclusions, but I actually still stand by it!
-              </p>
-              <div class="portfolio-links">
-                <a
-                  class="portfolio-link"
-                  href="https://blog.jacksonbates.com/blog/2020-11-20-running/"
-                  >Blog</a
-                >
-              </div>
-            </div>
+    .btn:hover { background: var(--ink); color: var(--paper); }
+    .btn-filled { background: var(--ink); color: var(--paper); }
+    .btn-filled:hover { background: var(--accent); border-color: var(--accent); }
 
-            <div class="sample-card">
-              <h3>Feedback as macronutrients</h3>
-              <p>
-                A tortured metaphor about a particular way to think about the
-                various types of feedback we might give or receive. Also silly,
-                and probably less defensible than the running one. But I still
-                think I have a point. Or I might just have been hungry.
-              </p>
-              <div class="portfolio-links">
-                <a
-                  class="portfolio-link"
-                  href="https://blog.jacksonbates.com/blog/feedback-as-macronutrients/"
-                  >Blog</a
-                >
-              </div>
-            </div>
+    /* ── SECTION HEADERS ── */
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
 
-            <div class="sample-card">
-              <h3>Tweet Delete Bot</h3>
-              <p>
-                A Twitter bot written in Node.js that deletes tweets and unlikes
-                favourites more than 10 days old. I used it for a couple of
-                years. Of course, no one is on Twitter anymore, myself included,
-                so it doesn't matter.
-              </p>
-              <div class="portfolio-links">
-                <a
-                  class="portfolio-link"
-                  href="https://github.com/jacksonbates/tweet-delete-bot"
-                  >Code</a
-                >
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
+    h2 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    p { margin-bottom: 1.25rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── STORY / ABOUT ── */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+
+    .story-pull {
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      font-style: italic;
+      line-height: 1.45;
+      color: var(--ink);
+      border-left: 3px solid var(--accent);
+      padding-left: 1.25rem;
+    }
+
+    /* ── PHILOSOPHY ── */
+    #philosophy { background: var(--paper); }
+
+    .philosophy-items {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    .philosophy-item {
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .philosophy-number {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--rule);
+      line-height: 1;
+      padding-top: 0.1rem;
+    }
+
+    .philosophy-item h3 { margin-bottom: 0.5rem; }
+
+    /* ── EXPERIENCE ── */
+    .experience-list { margin-top: 1rem; }
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: start;
+    }
+
+    .experience-item:last-child { border-bottom: none; }
+
+    .exp-role {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .exp-company {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .exp-description { color: var(--mid); font-size: 0.95rem; }
+
+    .exp-date {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--mid);
+      white-space: nowrap;
+      padding-top: 0.2rem;
+      text-align: right;
+    }
+
+    /* ── THINKING / WRITING ── */
+    .writing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .writing-card {
+      border: 1px solid var(--rule);
+      padding: 1.75rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .writing-card:hover {
+      border-color: var(--accent);
+      background: var(--paper-dark);
+    }
+
+    .writing-card-tag {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .writing-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .writing-card p {
+      font-size: 0.88rem;
+      color: var(--mid);
+      margin-bottom: 0;
+    }
+
+    /* ── CONTACT ── */
+    #contact { text-align: center; }
+
+    .contact-email {
+      display: inline-block;
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-style: italic;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.1em;
+      margin: 2rem 0;
+      transition: color 0.2s;
+    }
+
+    .contact-email:hover { color: var(--accent); }
+
+    .social-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-row a {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .social-row a:hover { color: var(--accent); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--mid);
+      font-family: var(--mono);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 680px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { gap: 1.25rem; }
+      .nav-links a { font-size: 0.72rem; }
+      section { padding: 4rem 1.5rem; }
+      #hero { padding-top: 8rem; }
+      .story-grid, .writing-grid { grid-template-columns: 1fr; }
+      .philosophy-item { grid-template-columns: 2rem 1fr; }
+      .experience-item { grid-template-columns: 1fr; }
+      .exp-date { text-align: left; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow { animation: fadeUp 0.6s ease both; }
+    h1             { animation: fadeUp 0.6s 0.1s ease both; }
+    .hero-sub      { animation: fadeUp 0.6s 0.2s ease both; }
+    .hero-links    { animation: fadeUp 0.6s 0.3s ease both; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="#hero">Jackson Bates</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#thinking">Writing</a></li>
+      <li><a href="https://linkedin.com/in/jackson-bates">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <p class="hero-eyebrow">Engineering Leader · Melbourne</p>
+    <h1>Jackson<br /><em>Bates</em></h1>
+    <p class="hero-sub">
+      I lead engineering teams that ship things that matter — with clarity,
+      care, and a healthy intolerance for unnecessary complexity.
+    </p>
+    <div class="hero-links">
+      <a class="btn btn-filled" href="#philosophy">How I work</a>
+      <a class="btn" href="#experience">Experience</a>
+      <a class="btn" href="https://blog.jacksonbates.com">Writing</a>
     </div>
-    <!-- Custom JS -->
-    <script src="main.js"></script>
-  </body>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label">Background</p>
+    <h2>A different kind of path in.</h2>
+
+    <div class="story-grid">
+      <div>
+        <p>
+          I came to software engineering through teaching. For over a decade
+          I worked as a Senior Teacher, Head of English, and Coordinator of
+          Learning Technologies across schools in the UK and Australia. That
+          background isn't a footnote — it's the lens through which I lead.
+        </p>
+        <p>
+          When I made the transition into tech, I had to learn fast, prove
+          myself quickly, and earn credibility in rooms where I was the least
+          experienced person. I know what that feels like, and it shapes how I
+          support and develop the people on my teams.
+        </p>
+        <p>
+          Since then I've worked as a consultant at a machine learning company,
+          led engineering at a social-impact startup through rapid growth,
+          serving as its CTO, and now I'm an Engineering Manager at Atomi — an
+          Australian EdTech platform used by high school students and teachers
+          across the country. The contexts have varied. The approach hasn't
+          changed much.
+        </p>
+      </div>
+      <div>
+        <p class="story-pull">
+          "The best engineering managers I've met thought like teachers —
+          always asking: does this person understand? Can I help them get
+          there?"
+        </p>
+        <p style="margin-top: 1.5rem; color: var(--mid); font-size: 0.95rem;">
+          I was also a long-time, early contributor to freeCodeCamp, the open
+          source learning platform, where I've written, moderated, and helped
+          mentor thousands of people learning to code.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section id="philosophy">
+    <p class="section-label">Leadership Philosophy</p>
+    <h2>How I think about the work.</h2>
+
+    <div class="philosophy-items">
+
+      <div class="philosophy-item">
+        <span class="philosophy-number">01</span>
+        <div>
+          <h3>Empathy is a professional skill, not a soft one.</h3>
+          <p>
+            Understanding what someone actually needs — as opposed to what
+            they're saying — is one of the highest-leverage things a leader
+            can do. That applies to engineers on my team, stakeholders pushing
+            back on timelines, and users who can't articulate why the product
+            frustrates them. I take it seriously.
+          </p>
+          <p>
+            But empathy without accountability is just avoidance wearing a
+            friendly face. When someone isn't performing, I have the
+            conversation early and directly. I'd rather have an uncomfortable
+            discussion now than a damaging one later — for them and for the
+            team. I've learned from the mistake of not doing this in the past.
+          </p>
+        </div>
+      </div>
+
+      <div class="philosophy-item">
+        <span class="philosophy-number">02</span>
+        <div>
+          <h3>Engineering managers should understand the product.</h3>
+          <p>
+            I'm not a product manager, and I'm not trying to be. But an EM
+            who treats delivery as the only success metric is trying to ride a bike using only one pedal.
+            The question isn't just "did we ship it?" — it's "did
+            we ship the right thing, and are we paying attention to whether it's
+            working?"
+          </p>
+          <p>
+            I push my teams to have opinions about what they're building. I
+            think that makes the engineering better, the product conversations
+            more honest, and the roadmap decisions more grounded.
+          </p>
+        </div>
+      </div>
+
+      <div class="philosophy-item">
+        <span class="philosophy-number">03</span>
+        <div>
+          <h3>Pragmatism means knowing which battles to pick.</h3>
+          <p>
+            Perfect is the enemy of shipped, but so is shipped-too-fast.
+            I've seen teams grind to a halt under technical debt they never
+            addressed, and I've seen other teams gold-plate code that got
+            deleted six months later. Neither is obviously better.
+          </p>
+          <p>
+            The job is to make considered trade-offs, document them honestly,
+            and revisit them. I'm not dogmatic about process or tooling. I'm
+            dogmatic about being deliberate.
+          </p>
+        </div>
+      </div>
+
+      <div class="philosophy-item">
+        <span class="philosophy-number">04</span>
+        <div>
+          <h3>Good culture is built in the small moments.</h3>
+          <p>
+            It shows up in how you run a retrospective when the sprint went
+            badly. In whether people feel safe flagging a problem before it
+            becomes a crisis. In whether feedback flows in all directions or
+            only downward.
+          </p>
+          <p>
+            I think about this stuff consciously, not as a box-ticking
+            exercise. The teams I'm proudest of have been ones where people
+            genuinely looked out for each other — and that doesn't happen by
+            accident.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label">Experience</p>
+    <h2>Where I've been.</h2>
+
+    <div class="experience-list">
+
+      <div class="experience-item">
+        <div>
+          <p class="exp-role">Engineering Manager</p>
+          <p class="exp-company">Atomi</p>
+          <p class="exp-description">
+            Engineering Manager for a squad of five engineers spanning the 
+            Authoring and Learning Experience domains at an EdTech platform 
+            serving high school students and teachers across Australia. 
+            The work I'm most proud of here is cultural rather than technical — 
+            shifting the team toward genuine ownership of their domains, building 
+            the kind of trust with our PM and designer that makes scoping 
+            conversations crisp rather than fraught, and raising the product fluency 
+            of engineers who now have real opinions about what they're building. 
+            The result is a team that moves quickly without cutting corners, and 
+            collaborates well enough that that pace is sustainable.
+          </p>
+        </div>
+        <div class="exp-date">Aug 2022 — Present</div>
+      </div>
+
+      <div class="experience-item">
+        <div>
+          <p class="exp-role">Lead Engineer -> Chief Technical Officer</p>
+          <p class="exp-company">Grace Papers</p>
+          <p class="exp-description">
+            Joined as the first in-house engineer, inheriting a functional but 
+            fragile agency-built platform with no tests, difficult maintenance, 
+            and a company full of manual processes that the product barely supported. 
+            Over three years I turned that proof-of-concept into a stable, maintainable 
+            production system — building out automated testing, fixing the foundations, 
+            and streamlining internal workflows that had been held together with goodwill 
+            and spreadsheets.
+            </p>
+          <p class="exp-description">
+            I also grew the technical team to five, hiring two juniors, a senior engineer, 
+            and a data scientist. By the time I was appointed CTO, I was accountable for 
+            technical strategy and platform architecture while working closely with a product 
+            agency to envision a new suite of coaching tools.
+          </p>
+        </div>
+        <div class="exp-date">Dec 2019 — Aug 2022</div>
+      </div>
+
+      <div class="experience-item">
+        <div>
+          <p class="exp-role">Software Engineer · Consultant</p>
+          <p class="exp-company">Silverpond</p>
+          <p class="exp-description">
+            Built web applications supporting machine learning work across
+            industries including large-scale asset inspection, wildlife
+            conservation, and retail. Fast context-switching, diverse
+            stakeholders, and the kind of problems that don't have obvious
+            answers. I quickly learned the value of talking to customers
+            and listening carefully to what they needed to build excellent
+            products.
+          </p>
+        </div>
+        <div class="exp-date">Jul 2018 — Dec 2019</div>
+      </div>
+
+      <div class="experience-item">
+        <div>
+          <p class="exp-role">Contributor · Moderator · Writer</p>
+          <p class="exp-company">freeCodeCamp</p>
+          <p class="exp-description">
+            A sustained, voluntary investment in a community I care about.
+            Writing articles, moderating forums, and helping people navigate
+            the intimidating early stages of learning to code. I didn't do it for the 
+            swag, but the freeCodeCamp Top Contributor backpack Quincy sent me is
+            still one of my treasured posessions!
+          </p>
+        </div>
+        <div class="exp-date">Sep 2016 — Dec 2020</div>
+      </div>
+
+      <div class="experience-item">
+        <div>
+          <p class="exp-role">Senior Teacher · Head of English · Coordinator, Learning Technologies</p>
+          <p class="exp-company">Various Schools, UK &amp; Australia</p>
+          <p class="exp-description">
+            Over a decade in secondary education shaped how I communicate,
+            how I mentor, and how I think about people learning difficult
+            things under pressure. I reference this career more often than
+            you'd expect, and I think that's a feature.
+          </p>
+        </div>
+        <div class="exp-date">2005 — 2017</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WRITING / THINKING -->
+  <section id="thinking">
+    <p class="section-label">Writing</p>
+    <h2>Things I've thought about publicly.</h2>
+
+    <div class="writing-grid">
+
+      <a class="writing-card" href="http://podcast.freecodecamp.org/ep-83-from-high-school-english-teacher-to-software-engineer-at-a-machine-learning-company">
+        <p class="writing-card-tag">Podcast</p>
+        <h3>From English teacher to software engineer</h3>
+        <p>The freeCodeCamp podcast — on career change, open source, and what teaching gave me that a bootcamp couldn't.</p>
+      </a>
+
+      <a class="writing-card" href="https://open.spotify.com/episode/0wVPwcHGavraYamHPBfu0N">
+        <p class="writing-card-tag">Podcast</p>
+        <h3>How to attract and retain engineering talent</h3>
+        <p>A panel conversation on hiring and retention — particularly the challenges that are specific to small, fast-moving teams.</p>
+      </a>
+
+      <a class="writing-card" href="https://blog.jacksonbates.com/blog/feedback-as-macronutrients/">
+        <p class="writing-card-tag">Leadership</p>
+        <h3>Feedback as macronutrients</h3>
+        <p>A framework for thinking about the different types of feedback — and why a diet of only one kind leaves people malnourished.</p>
+      </a>
+
+      <a class="writing-card" href="https://blog.jacksonbates.com/blog/2020-11-20-running/">
+        <p class="writing-card-tag">Craft</p>
+        <h3>What running taught me about persistence and programming</h3>
+        <p>The parallels between physical endurance and the patience required to actually get good at something.</p>
+      </a>
+
+
+    </div>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--mid);">
+      More at <a href="https://blog.jacksonbates.com" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-muted);">blog.jacksonbates.com</a>.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label">Get in touch</p>
+    <h2>Let's talk.</h2>
+    <p style="color: var(--mid); max-width: 480px; margin: 0 auto 1rem;">
+      If you're thinking about a senior engineering leadership role and want
+      to have a conversation, I'm open to it.
+    </p>
+    <!-- Replace with your actual email or a contact form -->
+    <a class="contact-email" href="https://linkedin.com/in/jackson-bates">
+      linkedin.com/in/jackson-bates
+    </a>
+    <div class="social-row">
+      <a href="https://github.com/JacksonBates">GitHub</a>
+      <a href="https://aus.social/web/@JacksonBates">Mastodon</a>
+      <a href="https://youtube.com/JacksonBates">YouTube</a>
+      <a href="https://blog.jacksonbates.com">Blog</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>Jackson Bates · Melbourne, Australia</span>
+    <span>Engineering leadership · EdTech · TypeScript</span>
+  </footer>
+
+</body>
 </html>
