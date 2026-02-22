@@ -1,42 +1,21 @@
 # Jackson Bates Personal Website
 
-This repository contains the source code for my personal website/resume hosted at [jacksonbates.github.io](https://jacksonbates.github.io).
+This repository contains the source code for my personal website hosted at [jacksonbates.github.io](https://jacksonbates.github.io).
 
-## Project Structure
+## Architecture
 
-- `index.html` - Main resume page
-- `links.html` - Additional links page
-- `src/stylesheets/` - SCSS source files
-- `public/stylesheets/` - Compiled CSS files
-- `public/images/` - Image assets
-- `fontawesome-free/` - Font Awesome library files
+This is a single-page site with zero dependencies:
+- `index.html` - Complete site with inline styles
+- `CNAME` - Custom domain configuration
+- `sitemap.xml` - SEO sitemap
 
-## Development Setup
+All styles are embedded directly in the HTML using CSS custom properties (variables) and modern CSS features. The site loads only two external resources:
+- Google Fonts (Playfair Display, DM Sans, DM Mono)
+- No JavaScript framework needed
 
-### Prerequisites
+## Testing Locally
 
-To modify the SCSS files, you'll need:
-- [Node.js and npm](https://nodejs.org/en/download/) - npm is the Node.js package manager and is required to install Sass. Download and install Node.js, which includes npm.
-- [Sass](https://sass-lang.com/install) - CSS preprocessor
-
-### Compiling SCSS
-
-The SCSS files in `src/stylesheets/` need to be compiled to generate the CSS in `public/stylesheets/`. You can do this with the Sass command line tool:
-
-```bash
-# Install Sass globally if you don't have it
-npm install -g sass
-
-# Compile SCSS to CSS (one-time)
-sass src/stylesheets/resume.scss:public/stylesheets/resume.css
-
-# Or watch for changes during development
-sass --watch src/stylesheets/resume.scss:public/stylesheets/resume.css
-```
-
-### Testing Locally
-
-To test the website locally, you can use any simple HTTP server. For example:
+To test the website locally, use any simple HTTP server:
 
 ```bash
 # Using Python (if installed)
@@ -50,7 +29,7 @@ Then open your browser to the URL shown in the terminal (typically http://localh
 
 ## Deployment
 
-This site is hosted on GitHub Pages, so deployment is automatic when changes are pushed to the master branch:
+This site is hosted on GitHub Pages. Deployment is automatic when changes are pushed to the master branch:
 
 ```bash
 git add .
@@ -58,8 +37,4 @@ git commit -m "Your commit message"
 git push origin master
 ```
 
-## External Dependencies
-
-- [Font Awesome](https://fontawesome.com/) (included in repo)
-
-The site uses vanilla JavaScript and custom SASS styles for all functionality and styling.
+The site will be live at https://jacksonbates.github.io within a few minutes.
